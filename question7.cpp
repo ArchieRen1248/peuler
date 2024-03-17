@@ -1,10 +1,10 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using ull = unsigned long long;
 
 template <typename NumType>
-bool isPrime(const NumType value) {
+inline bool isPrime(const NumType value) {
   const NumType loopEnd = std::sqrt(value);
   for (NumType i = 2; i <= loopEnd; i++) {
     if (value % i == 0) {
